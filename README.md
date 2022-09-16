@@ -6,11 +6,26 @@ This repository contains a Keycloak instance with some custom Entando themes tha
 
 For more info about Keycloak themes, see the [official docs](https://www.keycloak.org/docs/latest/server_development/#_themes).
 
+
+## Build
+In order to build changes using Keycloak:
+
+```
+docker build -t entando/keycloak:latest -f Dockerfile.keycloak .
+```
+
+In order to build changes using Red Hat SSO:
+
+```
+docker build -t entando/keycloak:latest -f Dockerfile.redhat-sso .
+```
+
 ## Run
 In order to run locally using Keycloak:
 
 ```
 docker-compose up --build keycloak
+
 ```
 
 In order to run locally using Red Hat SSO:
